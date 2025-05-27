@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="TipCalc.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Tip Calculator</h1>
+    <div class="input-group">
+      <label>Bill Amount (AED):</label>
+      <input type="number" id="bill" placeholder="e.g. 100" />
+    </div>
+    <div class="input-group">
+      <label>Tip Percentage (%):</label>
+      <input type="number" id="tip" placeholder="e.g. 15" />
+    </div>
+    <button onclick="calculateTip()">Calculate</button>
+    <div class="result">
+      <p>Tip Amount: AED <span id="tip-amount">0.00</span></p>
+      <p>Total Bill: AED <span id="total">0.00</span></p>
+    </div>
+  </div>
+  <script src="TipCalc.js"></script>
+</body>
+</html>
